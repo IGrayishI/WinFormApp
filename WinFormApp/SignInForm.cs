@@ -41,7 +41,6 @@ namespace WinFormApp
             {
                 signupwindow = new SignUpForm();
             }
-
             signupwindow.Show();
         }
     }

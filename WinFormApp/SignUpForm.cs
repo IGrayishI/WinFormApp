@@ -17,9 +17,16 @@ namespace WinFormApp
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
+            if ( textBoxFirstName != null && textBoxLastName != null && textBoxPassword != null && textBoxUsername != null )
+            {
             User user = new User(textBoxFirstName.Text, textBoxLastName.Text, textBoxUsername.Text, textBoxPassword.Text);
             users.Add(user);
             this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Please input in all boxes");
+            }
         }
 
         public User VerifyPassword(string usernameInput, string passwordInput)

@@ -105,7 +105,7 @@
             // 
             // SignUpButton
             // 
-            SignUpButton.Location = new Point(190, 228);
+            SignUpButton.Location = new Point(203, 228);
             SignUpButton.Name = "SignUpButton";
             SignUpButton.Size = new Size(75, 23);
             SignUpButton.TabIndex = 8;
