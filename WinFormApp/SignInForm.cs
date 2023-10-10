@@ -22,10 +22,11 @@ namespace WinFormApp
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
-            
-            if (signupwindow.VerifyPassword(textBoxUsername.Text, textBoxPassword.Text))
+            var getUser = (signupwindow.VerifyPassword(textBoxUsername.Text, textBoxPassword.Text));
+
+            if (getUser != null)
             {
-                MessageBox.Show("Welcome");
+                MessageBox.Show($"Welcome {getUser.FirstName} {getUser.LastName}");
             } else
             {
                 MessageBox.Show("Wrong login");
@@ -35,6 +36,11 @@ namespace WinFormApp
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
+            if (signupwindow == null || signupwindow.IsDisposed)
+            {
+                signupwindow = new SignUpForm();
+            }
+
             signupwindow.Show();
         }
     }

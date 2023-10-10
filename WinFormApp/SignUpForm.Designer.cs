@@ -77,35 +77,35 @@
             // 
             // textBoxFirstName
             // 
-            textBoxFirstName.Location = new Point(158, 55);
+            textBoxFirstName.Location = new Point(143, 55);
             textBoxFirstName.Name = "textBoxFirstName";
             textBoxFirstName.Size = new Size(195, 23);
             textBoxFirstName.TabIndex = 4;
             // 
             // textBoxLastName
             // 
-            textBoxLastName.Location = new Point(158, 93);
+            textBoxLastName.Location = new Point(143, 93);
             textBoxLastName.Name = "textBoxLastName";
             textBoxLastName.Size = new Size(195, 23);
             textBoxLastName.TabIndex = 5;
             // 
             // textBoxUsername
             // 
-            textBoxUsername.Location = new Point(158, 135);
+            textBoxUsername.Location = new Point(143, 135);
             textBoxUsername.Name = "textBoxUsername";
             textBoxUsername.Size = new Size(195, 23);
             textBoxUsername.TabIndex = 6;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(158, 179);
+            textBoxPassword.Location = new Point(143, 179);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(195, 23);
             textBoxPassword.TabIndex = 7;
             // 
             // SignUpButton
             // 
-            SignUpButton.Location = new Point(210, 275);
+            SignUpButton.Location = new Point(190, 228);
             SignUpButton.Name = "SignUpButton";
             SignUpButton.Size = new Size(75, 23);
             SignUpButton.TabIndex = 8;
@@ -113,7 +113,7 @@
             SignUpButton.UseVisualStyleBackColor = true;
             SignUpButton.Click += SignUpButton_Click;
             // 
-            // Form1
+            // SignUpForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -127,7 +127,7 @@
             Controls.Add(labelUsername);
             Controls.Add(labelLastName);
             Controls.Add(labelFirstName);
-            Name = "Form1";
+            Name = "SignUpForm";
             Text = "User Signup";
             Load += Form1_Load;
             ResumeLayout(false);

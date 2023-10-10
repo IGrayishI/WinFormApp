@@ -3,7 +3,7 @@ namespace WinFormApp
     public partial class SignUpForm : Form
     {
         List<User> users = new List<User>();
-        User user = new User("firstName", "lastname", "username", "password");
+        //User user = new User("firstName", "lastname", "username", "password");
 
         public SignUpForm()
         {
@@ -22,19 +22,18 @@ namespace WinFormApp
             this.Close();
         }
 
-        public bool VerifyPassword(string usernameInput, string passwordInput)
+        public User VerifyPassword(string usernameInput, string passwordInput)
         {
-
+            User emptyUser = new User();
             foreach (User user in users)
             {
                 if (user.Username == usernameInput && user.Password == passwordInput)
                 {
-                    return true;
-                }
-            } 
-            return false;
-        }
 
-        
+                    return user;
+                }
+            }
+            return emptyUser;
+        }
     }
 }

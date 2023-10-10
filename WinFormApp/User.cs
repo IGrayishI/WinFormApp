@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormApp
 {
-    internal class User
+     public class User
     {
         public string FirstName;
         public string LastName;
@@ -15,8 +15,8 @@ namespace WinFormApp
 
         public User(string firstName, string lastName, string username, string password)
         {
-            firstName = FirstName;
-            lastName = LastName;
+            FirstName = firstName;
+            LastName = lastName;
             Username = username;
             Password = password;
         } 
