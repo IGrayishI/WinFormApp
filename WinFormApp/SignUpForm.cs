@@ -29,7 +29,6 @@ namespace WinFormApp
             {
                 if (user.Username == usernameInput && user.Password == passwordInput)
                 {
-
                     return user;
                 }
             }

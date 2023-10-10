@@ -24,10 +24,11 @@ namespace WinFormApp
         {
             var getUser = (signupwindow.VerifyPassword(textBoxUsername.Text, textBoxPassword.Text));
 
-            if (getUser != null)
+            if (getUser.FirstName != null )
             {
                 MessageBox.Show($"Welcome {getUser.FirstName} {getUser.LastName}");
-            } else
+            }
+            else
             {
                 MessageBox.Show("Wrong login");
             }

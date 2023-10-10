@@ -56,21 +56,21 @@
             // 
             // textBoxUsername
             // 
-            textBoxUsername.Location = new Point(268, 57);
+            textBoxUsername.Location = new Point(226, 57);
             textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.Size = new Size(100, 23);
+            textBoxUsername.Size = new Size(134, 23);
             textBoxUsername.TabIndex = 2;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(268, 96);
+            textBoxPassword.Location = new Point(226, 96);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(100, 23);
+            textBoxPassword.Size = new Size(134, 23);
             textBoxPassword.TabIndex = 3;
             // 
             // buttonSignIn
             // 
-            buttonSignIn.Location = new Point(268, 189);
+            buttonSignIn.Location = new Point(193, 157);
             buttonSignIn.Name = "buttonSignIn";
             buttonSignIn.Size = new Size(75, 23);
             buttonSignIn.TabIndex = 4;
@@ -80,7 +80,7 @@
             // 
             // buttonRegister
             // 
-            buttonRegister.Location = new Point(393, 189);
+            buttonRegister.Location = new Point(285, 157);
             buttonRegister.Name = "buttonRegister";
             buttonRegister.Size = new Size(75, 23);
             buttonRegister.TabIndex = 5;
